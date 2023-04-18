@@ -1,0 +1,23 @@
+.nav {
+
+  ul{
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    flex-grow: 0;
+    padding: 33px 25px;
+    margin-left: 10px;
+  }
+
+  a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-light;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  }
+
+}
