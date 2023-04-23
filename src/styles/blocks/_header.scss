@@ -1,4 +1,9 @@
 .header {
+  position: fixed; // Закрепляем шапку
+  top: 0; //
+  left: 0; //
+  z-index: 1000; // Задаём индекс для того чтобы она была всегда поверх других блоков
+  width: 100%; // Задаём ширину шапки на всю страницу
   background-color: $color-dark;
   color: $color-light;
 }
@@ -13,11 +18,24 @@
 }
 
 .header-logo {
-  padding: 17px 0;
   margin-right: auto;
   font-weight: 600;
   font-size: 42px;
   line-height: 57px;
   color: $color-light;
   text-decoration: none;
+}
+
+
+.header-burger {
+  display: none;
+
+
+  @media (max-width: $mobile-max) {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: $color-dark;
+  }
 }
