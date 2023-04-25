@@ -1,7 +1,8 @@
 .promo {
   text-align: center;
   align-items: center;
-  background: linear-gradient(0deg, rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.4)), url(/images/promo-bg.jpg);
+  background-image: url(/images/promo-bg.jpg);
+  background-color: $color-dark;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -11,13 +12,15 @@
   }
 
   @media (max-width: $mobile-max) {
-    background: linear-gradient(0deg, rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.4)), url(/images/promo-bg-mobile.jpg);
+    background-image: url(/images/promo-bg-mobile.jpg);
+    background-color: $color-dark;
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
   }
 
 }
+
 
 .promo-inner {
   @include inner;
@@ -33,6 +36,10 @@
     padding-top: 110px;
     padding-bottom: 100px;
   }
+}
+
+.promo-fill {
+  background-color: rgba($color-dark, .4);
 }
 
 .promo-tittle {

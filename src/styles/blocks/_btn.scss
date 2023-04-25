@@ -1,8 +1,7 @@
 .btn {
   display: inline-block;
   min-width: 497px;
-  padding: 30px 36px;
-  padding: 30px 48px;
+  padding: 34px 0 36px 0;
   text-decoration: none;
   font-weight: 400;
   font-size: 42px;
@@ -21,7 +20,7 @@
 }
 
 .btn-order {
-  height: 104px;
+  width: 100%;
   font-family: $font;
   font-weight: 400;
   font-size: 28px;

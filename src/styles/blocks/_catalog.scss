@@ -45,9 +45,9 @@
   @media (max-width: $mobile-max) {}
 }
 
-.catalog-list {
-  position: relative;
+.catalog-item {
   flex-basis: 25%;
+  padding: $gap-half;
 
   @media (max-width: $tablet-max) {
     flex-basis: 50%;
@@ -58,9 +58,9 @@
   }
 }
 
-.catalog-item {
-  display: inline-block;
-  padding: 0 10px;
+.catalog-link {
+  position: relative;
+  display: block;
 }
 
 .catalog-media {
